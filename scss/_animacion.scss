@@ -1,0 +1,13 @@
+@media (prefers-reduced-motion: no-preference) {
+  .img1 {
+    animation: img1-spin infinite 5s linear;
+  }
+}
+@keyframes img1-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
