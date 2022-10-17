@@ -1,6 +1,10 @@
 /*estilos generales */
 @import "variables";
 @import "estilosgenerales";
+@mixin flex($parametro1, $parametro2) {
+  display: $parametro1;
+  flex-direction: $parametro2;
+}
 
 /*-------------------------------------------estilos para Inicio---------------------------------------------------------------*/
 .bodyInicio {
@@ -121,8 +125,7 @@ ul li {
 }
 
 .seccionServicios {
-  display: flex;
-  flex-direction: column;
+  @include flex(flex, column);
 }
 
 .lista {
@@ -130,10 +133,7 @@ ul li {
   display: flex;
   justify-content: space-around;
 }
-@mixin flex($parametro1, $parametro2) {
-  display: $parametro1;
-  flex-direction: $parametro2;
-}
+
 .titular {
   @include flex(flex, column);
   margin: 20px;
