@@ -163,10 +163,10 @@ ul li {
   justify-content: space-around; }
 
 .titular {
-  margin: 20px;
-  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
+  margin: 20px;
+  padding-bottom: 20px;
   align-items: center; }
 
 .imgServicios {
@@ -222,9 +222,6 @@ video {
 
 .sectionContacto {
   height: 700px;
-  background-position: center;
-  background-attachment: contain;
-  background-size: cover;
   display: flex;
   justify-content: center; }
 
