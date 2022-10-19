@@ -34,10 +34,10 @@
 
 /*------------------------------------------import seccionNavIconos componente con nesting----------------------------------*/
 @import "seccionNavIconos";
+
 .texto-principal {
   height: 700px;
-  display: flex;
-  flex-direction: column;
+  @include flex(flex, column);
 }
 .h1-index {
   font-family: "lora", serif;
@@ -47,6 +47,7 @@
   background-color: $color;
   line-height: 1.6;
   text-align: center;
+  margin-top: 5px;
 }
 
 ul li {
@@ -55,9 +56,9 @@ ul li {
 .ulInicio {
   height: 100%;
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
+  @include flex(flex, column);
   justify-content: space-around;
+  margin-top: 15px;
 }
 .liCenter {
   display: flex;
@@ -82,6 +83,7 @@ ul li {
 }
 
 /* ---------------------------------------estilos para servicio----------------------------------------------------------------*/
+/*---------------------------------------Aplicacion de mixin y extend----------------------------------------------------------*/
 .h1Servicios {
   font-size: 40px;
 }
@@ -92,8 +94,7 @@ ul li {
 
 .lista {
   list-style-type: none;
-  display: flex;
-  justify-content: space-around;
+  @extend .articleServicios;
 }
 
 .titular {
@@ -164,6 +165,18 @@ video {
 .sectionContacto {
   display: flex;
   justify-content: center;
+  iframe {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+}
+.mapa {
+  @include flex(flex, column);
+
+  h3 {
+    text-align: center;
+  }
 }
 
 /*----------------------------------------@media general--------------------------------------------------*/

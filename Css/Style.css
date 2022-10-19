@@ -113,7 +113,8 @@ a {
   font-weight: 300px;
   background-color: black;
   line-height: 1.6;
-  text-align: center; }
+  text-align: center;
+  margin-top: 5px; }
 
 ul li {
   font-size: 30px; }
@@ -123,7 +124,8 @@ ul li {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-top: 15px; }
 
 .liCenter {
   display: flex;
@@ -146,6 +148,7 @@ ul li {
   font-weight: 50px; }
 
 /* ---------------------------------------estilos para servicio----------------------------------------------------------------*/
+/*---------------------------------------Aplicacion de mixin y extend----------------------------------------------------------*/
 .h1Servicios {
   font-size: 40px; }
 
@@ -154,9 +157,7 @@ ul li {
   flex-direction: column; }
 
 .lista {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around; }
+  list-style-type: none; }
 
 .titular {
   display: flex;
@@ -170,7 +171,7 @@ ul li {
   width: 700px;
   border-radius: 10px; }
 
-.articleServicios {
+.articleServicios, .lista {
   display: flex;
   justify-content: space-around; }
 
@@ -219,13 +220,23 @@ video {
 .sectionContacto {
   display: flex;
   justify-content: center; }
+  .sectionContacto iframe {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px; }
+
+.mapa {
+  display: flex;
+  flex-direction: column; }
+  .mapa h3 {
+    text-align: center; }
 
 /*----------------------------------------@media general--------------------------------------------------*/
 @media all and (max-width: 1195px) {
   .menu {
     flex-direction: column;
     height: auto; }
-  .articleServicios {
+  .articleServicios, .lista {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -268,9 +279,11 @@ video {
   .h1-index {
     font-size: 30px; } }
 
-@media all and (max-width: 450px) {
+@media all and (max-width: 500px) {
   .servicio__ul li {
-    font-size: 12px; } }
+    font-size: 12px; }
+  iframe {
+    width: 300px; } }
 
 @media all and (max-width: 330px) {
   .texto-principal li h4 {
