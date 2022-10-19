@@ -138,7 +138,7 @@ ul li {
   border-radius: 30%; }
 
 /*------------------------------------------------estilos aplicados nosotros.html---------------------------------------------------------*/
-.bodyNosotros {
+.bodyNosotros, .bodyContacto {
   font-family: "Montserrat", sans-serif;
   background-color: #b2e6dd; }
 
@@ -213,10 +213,6 @@ video {
 
 /*-------------------------------------------estilos para contacto ------------------------------------------------------------------*/
 /* ------------------------------------Se realizo y maqueto com boostrap---------------------------------------------------*/
-.bodyContacto {
-  font-family: "Montserrat", sans-serif;
-  background-color: #b2e6dd; }
-
 .sectionContacto {
   display: flex;
   justify-content: center; }
