@@ -1,0 +1,14 @@
+.nav {
+  flex: 5 1 auto;
+  a {
+    color: rgb(69, 17, 17);
+    font-size: 20px;
+    font-weight: 25px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+  }
+  a:hover {
+    color: $colorhover;
+  }
+}

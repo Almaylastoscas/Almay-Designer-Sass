@@ -62,48 +62,44 @@ a {
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 
+/*------------------------------------------import del logo componente con nesting---------------------------------------------*/
 .logo {
   flex: 1 1 auto;
   padding: 10px; }
+  .logo a {
+    color: black;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .logo a img {
+      border-radius: 10px; }
+  .logo a:hover {
+    color: #a29999; }
 
-.logo a {
-  color: black;
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.logo a img {
-  border-radius: 10px; }
-
-.logo a:hover {
-  color: #a29999; }
-
+/*------------------------------------------import nav paginas componente con nesting---------------------------------------*/
 .nav {
   flex: 5 1 auto; }
+  .nav a {
+    color: #451111;
+    font-size: 20px;
+    font-weight: 25px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px; }
+  .nav a:hover {
+    color: #a29999; }
 
-.nav a {
-  color: #451111;
-  font-size: 20px;
-  font-weight: 25px;
-  text-transform: uppercase;
-  padding: 0 10px;
-  letter-spacing: 2px; }
-
-.nav a:hover {
-  color: #a29999; }
-
+/*------------------------------------------import seccionNavIconos componente con nesting----------------------------------*/
 .social {
   flex: 1 1 auto;
   display: flex; }
-
-.social a {
-  color: black;
-  font-size: 30px;
-  padding: 0 5px; }
-
-.social a:hover {
-  color: #a29999; }
+  .social a {
+    color: black;
+    font-size: 30px;
+    padding: 0 5px; }
+  .social a:hover {
+    color: #a29999; }
 
 .texto-principal {
   height: 700px;
@@ -221,7 +217,6 @@ video {
   background-color: #b2e6dd; }
 
 .sectionContacto {
-  height: 700px;
   display: flex;
   justify-content: center; }
 

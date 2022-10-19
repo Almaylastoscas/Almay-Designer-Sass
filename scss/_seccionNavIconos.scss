@@ -1,0 +1,13 @@
+.social {
+  flex: 1 1 auto;
+  display: flex;
+  a {
+    color: $color;
+    font-size: 30px;
+    padding: 0 5px;
+  }
+
+  a:hover {
+    color: $colorhover;
+  }
+}
