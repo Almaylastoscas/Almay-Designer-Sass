@@ -18,12 +18,24 @@
   .seccionServicios {
     height: auto;
   }
+  .servicio__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 @media all and (max-width: 960px) {
   .off {
     display: none;
   }
   .servicio__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .bg-dark {
     text-align: center;
   }
 }
@@ -38,6 +50,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
   }
   .tamaño {
     font-size: 20px;
@@ -73,23 +86,35 @@
   .h1-index {
     font-size: 30px;
   }
+  .text-lg-center {
+    text-align: center;
+  }
 }
 @media all and (max-width: 500px) {
   .servicio__ul {
     li {
-      font-size: 12px;
+      font-size: 18px;
     }
   }
   iframe {
     width: 300px;
   }
 }
-@media all and (max-width: 330px) {
+@media all and (max-width: 376px) {
   .texto-principal {
     li {
       h4 {
         display: none;
       }
+    }
+  }
+  .imgServicios {
+    width: 300px;
+    height: 300px;
+  }
+  .servicio__ul {
+    li {
+      font-size: 16px;
     }
   }
 }

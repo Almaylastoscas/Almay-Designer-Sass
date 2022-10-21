@@ -104,6 +104,8 @@ ul {
 .lista {
   list-style-type: none;
   @extend .articleServicios;
+  padding-top: 5px;
+  align-items: center;
 }
 
 .titular {
