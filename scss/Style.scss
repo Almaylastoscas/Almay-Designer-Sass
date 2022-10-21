@@ -11,12 +11,13 @@
   font-family: "Montserrat", sans-serif;
   background: url(../imagenes/Home.png);
   background-position: center;
-  background-attachment: contain;
+
   background-size: cover;
 }
 .headerInicio {
   display: flex;
   flex-flow: column nowrap;
+  height: 100vh;
 }
 .menu {
   background-color: rgba(0, 0, 0, 0.1);
@@ -50,8 +51,10 @@
   margin-top: 5px;
 }
 
-ul li {
-  font-size: 30px;
+ul {
+  li {
+    font-size: 30px;
+  }
 }
 .ulInicio {
   height: 100%;
@@ -76,6 +79,10 @@ ul li {
   font-family: "Montserrat", sans-serif;
   background-color: rgb(178, 230, 221);
 }
+.container1 {
+  height: 100vh;
+}
+
 .bg-dark {
   font-size: 45px;
   color: aliceblue;
@@ -87,7 +94,9 @@ ul li {
 .h1Servicios {
   font-size: 40px;
 }
-
+.altoServicio {
+  height: 100vh;
+}
 .seccionServicios {
   @include flex(flex, column);
 }
@@ -129,22 +138,30 @@ video {
 .galeria-columna {
   margin: 10px;
 }
-.galeria .contenedor {
-  display: grid;
+.galeria {
+  .contenedor {
+    display: grid;
+  }
 }
 @media (min-width: 600px) {
-  .galeria .contenedor {
-    grid-template-columns: repeat(2, 50%);
+  .galeria {
+    .contenedor {
+      grid-template-columns: repeat(2, 50%);
+    }
   }
 }
 @media (min-width: 768px) {
-  .galeria .contenedor {
-    grid-template-columns: repeat(3, 33.3%);
+  .galeria {
+    .contenedor {
+      grid-template-columns: repeat(3, 33.3%);
+    }
   }
 }
 @media (min-width: 1024px) {
-  .galeria .contenedor {
-    grid-template-columns: repeat(4, 25%);
+  .galeria {
+    .contenedor {
+      grid-template-columns: repeat(4, 25%);
+    }
   }
   .contenedor {
     width: 1024px;
@@ -157,13 +174,14 @@ video {
 }
 
 /*-------------------------------------------estilos para contacto ------------------------------------------------------------------*/
-/* ------------------------------------Se realizo y maqueto com boostrap---------------------------------------------------*/
+/* ------------------------------------Se realizo y maqueto com boostrap y stilos nesting---------------------------------------------------*/
 .bodyContacto {
   @extend .bodyNosotros;
 }
 .sectionContacto {
   display: flex;
   justify-content: center;
+
   iframe {
     margin-top: 10px;
     margin-bottom: 10px;

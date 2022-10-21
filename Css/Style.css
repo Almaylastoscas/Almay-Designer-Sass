@@ -47,12 +47,12 @@ a {
   font-family: "Montserrat", sans-serif;
   background: url(../imagenes/Home.png);
   background-position: center;
-  background-attachment: contain;
   background-size: cover; }
 
 .headerInicio {
   display: flex;
-  flex-flow: column nowrap; }
+  flex-flow: column nowrap;
+  height: 100vh; }
 
 .menu {
   background-color: rgba(0, 0, 0, 0.1);
@@ -79,7 +79,8 @@ a {
 
 /*------------------------------------------import nav paginas componente con nesting---------------------------------------*/
 .nav {
-  flex: 5 1 auto; }
+  flex: 5 1 auto;
+  justify-content: center; }
   .nav a {
     color: #451111;
     font-size: 20px;
@@ -142,6 +143,9 @@ ul li {
   font-family: "Montserrat", sans-serif;
   background-color: #b2e6dd; }
 
+.container1 {
+  height: 100vh; }
+
 .bg-dark {
   font-size: 45px;
   color: aliceblue;
@@ -151,6 +155,9 @@ ul li {
 /*---------------------------------------Aplicacion de mixin y extend----------------------------------------------------------*/
 .h1Servicios {
   font-size: 40px; }
+
+.altoServicio {
+  height: 100vh; }
 
 .seccionServicios {
   display: flex;
@@ -212,7 +219,7 @@ video {
     width: 1200px; } }
 
 /*-------------------------------------------estilos para contacto ------------------------------------------------------------------*/
-/* ------------------------------------Se realizo y maqueto com boostrap---------------------------------------------------*/
+/* ------------------------------------Se realizo y maqueto com boostrap y stilos nesting---------------------------------------------------*/
 .sectionContacto {
   display: flex;
   justify-content: center; }
@@ -236,11 +243,19 @@ video {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .headerInicio {
+    height: auto; }
+  .container1 {
+    height: auto; }
+  .seccionServicios {
+    height: auto; } }
 
 @media all and (max-width: 960px) {
   .off {
-    display: none; } }
+    display: none; }
+  .servicio__ul {
+    text-align: center; } }
 
 @media all and (max-width: 720px) {
   .imgServicios {
@@ -257,7 +272,8 @@ video {
   .servicio__ul {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    text-align: center; }
   .pie {
     display: flex;
     flex-direction: column; }

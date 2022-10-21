@@ -9,10 +9,22 @@
     justify-content: center;
     align-items: center;
   }
+  .headerInicio {
+    height: auto;
+  }
+  .container1 {
+    height: auto;
+  }
+  .seccionServicios {
+    height: auto;
+  }
 }
 @media all and (max-width: 960px) {
   .off {
     display: none;
+  }
+  .servicio__ul {
+    text-align: center;
   }
 }
 @media all and (max-width: 720px) {
@@ -34,6 +46,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   .pie {
     display: flex;
@@ -42,31 +55,41 @@
   .footer {
     height: 100%;
   }
-  .footer h5 {
-    font-size: 15px;
-    text-align: center;
+  .footer {
+    h5 {
+      font-size: 15px;
+      text-align: center;
+    }
   }
-  .texto-principal li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 20px;
+  .texto-principal {
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 20px;
+    }
   }
   .h1-index {
     font-size: 30px;
   }
 }
 @media all and (max-width: 500px) {
-  .servicio__ul li {
-    font-size: 12px;
+  .servicio__ul {
+    li {
+      font-size: 12px;
+    }
   }
   iframe {
     width: 300px;
   }
 }
 @media all and (max-width: 330px) {
-  .texto-principal li h4 {
-    display: none;
+  .texto-principal {
+    li {
+      h4 {
+        display: none;
+      }
+    }
   }
 }
