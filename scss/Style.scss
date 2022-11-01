@@ -11,7 +11,6 @@
   font-family: "Montserrat", sans-serif;
   background: url(../imagenes/Home.png);
   background-position: center;
-
   background-size: cover;
 }
 .headerInicio {
@@ -41,8 +40,7 @@
   @include flex(flex, column);
 }
 .h1-index {
-  font-family: "lora", serif;
-  font-size: 40px;
+  font-size: 35px;
   color: aliceblue;
   font-weight: 300px;
   background-color: $color;
@@ -78,9 +76,10 @@ ul {
 .bodyNosotros {
   font-family: "Montserrat", sans-serif;
   background-color: rgb(178, 230, 221);
+  height: 100vh;
 }
 .container1 {
-  height: 100vh;
+  margin-bottom: 50px;
 }
 
 .bg-dark {
@@ -91,14 +90,25 @@ ul {
 
 /* ---------------------------------------estilos para servicio----------------------------------------------------------------*/
 /*---------------------------------------Aplicacion de mixin y extend----------------------------------------------------------*/
+
+.bodyServicio {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(178, 230, 221);
+}
 .h1Servicios {
   font-size: 40px;
+  color: aliceblue;
+  text-align: center;
+  align-items: center;
+  font-weight: 400;
 }
-.altoServicio {
-  height: 100vh;
-}
+
 .seccionServicios {
   @include flex(flex, column);
+  margin-bottom: 25px;
+}
+.servicio__ul {
+  margin-top: 50px;
 }
 
 .lista {
@@ -106,15 +116,20 @@ ul {
   @extend .articleServicios;
   padding-top: 5px;
   align-items: center;
+  margin-bottom: 25px;
 }
 
 .titular {
   @include flex(flex, column);
   margin: 20px;
-  padding-bottom: 20px;
+
+  display: flex;
   align-items: center;
+  background-color: black;
+  align-content: center;
 }
 .imgServicios {
+  margin-top: 60px;
   height: $altura * 9;
   width: 700px;
   border-radius: 10px;
@@ -127,8 +142,10 @@ ul {
 
 /*-------------------------------------------estilos para galeria-----------------------------------------------------------*/
 .h1galeria {
-  font-size: 70px;
+  font-size: 50px;
   text-align: center;
+  color: aliceblue;
+  background-color: black;
 }
 .contenedor {
   width: 100%;
@@ -179,6 +196,17 @@ video {
 /* ------------------------------------Se realizo y maqueto com boostrap y stilos nesting---------------------------------------------------*/
 .bodyContacto {
   @extend .bodyNosotros;
+}
+.titularC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin: 0 50px;
+
+  h1 {
+    color: aliceblue;
+  }
 }
 .sectionContacto {
   display: flex;

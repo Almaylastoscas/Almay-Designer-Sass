@@ -63,6 +63,9 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 
 /*------------------------------------------import del logo componente con nesting---------------------------------------------*/
+.menu {
+  height: 60px; }
+
 .logo {
   flex: 1 1 auto;
   padding: 10px; }
@@ -108,8 +111,7 @@ a {
   flex-direction: column; }
 
 .h1-index {
-  font-family: "lora", serif;
-  font-size: 40px;
+  font-size: 35px;
   color: aliceblue;
   font-weight: 300px;
   background-color: black;
@@ -141,10 +143,11 @@ ul li {
 /*------------------------------------------------estilos aplicados nosotros.html---------------------------------------------------------*/
 .bodyNosotros, .bodyContacto {
   font-family: "Montserrat", sans-serif;
-  background-color: #b2e6dd; }
+  background-color: #b2e6dd;
+  height: 100vh; }
 
 .container1 {
-  height: 100vh; }
+  margin-bottom: 50px; }
 
 .bg-dark {
   font-size: 45px;
@@ -153,29 +156,42 @@ ul li {
 
 /* ---------------------------------------estilos para servicio----------------------------------------------------------------*/
 /*---------------------------------------Aplicacion de mixin y extend----------------------------------------------------------*/
-.h1Servicios {
-  font-size: 40px; }
+.bodyServicio {
+  font-family: "Montserrat", sans-serif;
+  background-color: #b2e6dd; }
 
-.altoServicio {
-  height: 100vh; }
+.h1Servicios {
+  font-size: 40px;
+  color: aliceblue;
+  text-align: center;
+  align-items: center;
+  font-weight: 400; }
 
 .seccionServicios {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 25px; }
+
+.servicio__ul {
+  margin-top: 50px; }
 
 .lista {
   list-style-type: none;
   padding-top: 5px;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 25px; }
 
 .titular {
   display: flex;
   flex-direction: column;
   margin: 20px;
-  padding-bottom: 20px;
-  align-items: center; }
+  display: flex;
+  align-items: center;
+  background-color: black;
+  align-content: center; }
 
 .imgServicios {
+  margin-top: 60px;
   height: 450px;
   width: 700px;
   border-radius: 10px; }
@@ -186,8 +202,10 @@ ul li {
 
 /*-------------------------------------------estilos para galeria-----------------------------------------------------------*/
 .h1galeria {
-  font-size: 70px;
-  text-align: center; }
+  font-size: 50px;
+  text-align: center;
+  color: aliceblue;
+  background-color: black; }
 
 .contenedor {
   width: 100%;
@@ -222,6 +240,15 @@ video {
 
 /*-------------------------------------------estilos para contacto ------------------------------------------------------------------*/
 /* ------------------------------------Se realizo y maqueto com boostrap y stilos nesting---------------------------------------------------*/
+.titularC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin: 0 50px; }
+  .titularC h1 {
+    color: aliceblue; }
+
 .sectionContacto {
   display: flex;
   justify-content: center; }
@@ -302,7 +329,7 @@ video {
     display: flex;
     flex-direction: column; }
   .footer {
-    height: 100%; }
+    height: auto; }
   .footer h5 {
     font-size: 15px;
     text-align: center; }
