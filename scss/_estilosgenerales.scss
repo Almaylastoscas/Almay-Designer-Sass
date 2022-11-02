@@ -24,7 +24,7 @@ a {
   justify-content: center;
 }
 
-.pie {
+.footer__pie {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +36,7 @@ a {
   align-items: center;
   justify-content: center;
   align-content: center;
-  h5 {
+  .footer__informacion {
     color: black;
     text-align: center;
   }

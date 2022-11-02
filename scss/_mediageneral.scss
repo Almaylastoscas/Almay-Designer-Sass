@@ -62,19 +62,18 @@
     align-items: center;
     text-align: center;
   }
-  .pie {
+  .footer__pie {
     display: flex;
     flex-direction: column;
   }
   .footer {
     height: auto;
-  }
-  .footer {
-    h5 {
+    .footer__informacion {
       font-size: 15px;
       text-align: center;
     }
   }
+
   .texto-principal {
     li {
       display: flex;

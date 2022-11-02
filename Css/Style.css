@@ -21,7 +21,7 @@ a {
   display: flex;
   justify-content: center; }
 
-.pie {
+.footer__pie {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,7 +32,7 @@ a {
   align-items: center;
   justify-content: center;
   align-content: center; }
-  .footer__a h5 {
+  .footer__a .footer__informacion {
     color: black;
     text-align: center; }
 
@@ -325,14 +325,14 @@ video {
     flex-direction: column;
     align-items: center;
     text-align: center; }
-  .pie {
+  .footer__pie {
     display: flex;
     flex-direction: column; }
   .footer {
     height: auto; }
-  .footer h5 {
-    font-size: 15px;
-    text-align: center; }
+    .footer .footer__informacion {
+      font-size: 15px;
+      text-align: center; }
   .texto-principal li {
     display: flex;
     align-items: center;
