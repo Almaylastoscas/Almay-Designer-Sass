@@ -194,7 +194,8 @@ ul li {
   margin-top: 60px;
   height: 450px;
   width: 700px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  box-shadow: -5px 15px 20px; }
 
 .articleServicios, .lista {
   display: flex;
